@@ -1,0 +1,65 @@
+.Login  
+{ 
+	background: url("weedezign150400515.jpg");
+	min-height: 752px;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative; 
+}
+
+a {
+  color: white;
+  font-size: 20px;
+}
+
+input[type=text] {
+  width: 20%;
+  padding: 5px 10px;
+  text-align: centre;
+}
+
+body
+{
+  
+	margin: 0;
+	padding: 0;
+	background-position: centre;
+	font-family: sans-serif;
+}
+
+.container {
+  
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.btn {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}

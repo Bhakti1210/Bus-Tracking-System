@@ -1,0 +1,43 @@
+.Find
+{
+	
+	background: rgb(0, 0, 0); /* Fallback color */
+  	background: rgba(0, 0, 0, 0.2); /* Black background with 0.2 opacity */
+	font-family: sans-serif;
+	text-align:center;
+	padding-top:100px
+  	color: green;
+  	font-weight: bold;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 2;
+  	width: 30%;
+  	padding: 20px;
+  
+		   
+}
+.loc
+{
+	
+	background-image: url("map.jpg");
+	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	filter: blur(8px);
+  	-webkit-filter: blur(8px);
+
+}
+.btn {
+
+	transition-duration: 0.4s;
+	size:10px 20px;
+}
+
+.btn:hover {
+	background-color: #4CAF50; 
+    	color: white;
+
+}

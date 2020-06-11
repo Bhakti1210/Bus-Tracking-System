@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style1.css'%}">	
+
+			<style>
+	 				body{
+  						background-image: url('{% static 'css/weedezign150400515.jpg'%}');
+  						background-repeat: no-repeat;
+  						min-height: 752px;
+						background-position: center;
+  						background-size: cover;
+  						position: relative;
+
+					}
+			</style>
+</head>
+<body>
+	<div class = "Login">
+		<form class = "container" method='post' action='secondslide.html'>{% csrf_token %}
+			<p>Username</p>
+			<input type= "text" name="name1" placeholder= "Enter Username">
+			<p>Mobile Number</p>
+			<input type = "text" name ="mb" maxlength="10" placeholder= "Enter Mobile Number"><br><br>
+			
+			<button type="submit" name="btn" class = "btn">Login</button><br><br>
+
+			<a href="action.html">Don't have an account?</a>
+			{{ data }}
+
+			{% if messages %}
+				<ul class="messages">
+					{% for message in messages %}
+						<li class="{{ message.tags}}">{{ message }} </li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</form>	
+	</div>
+</body>
+</html>
+

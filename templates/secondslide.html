@@ -1,0 +1,56 @@
+<html>
+<head>
+
+{% load static %}
+{{ form }}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style2.css'%}">
+	
+</head>
+	
+<body>
+
+	<div class = "loc"> </div>
+		
+		{{data}}
+		<form action="" method="post" class="Find">{% csrf_token %}
+			<h1 style="color:#C9485B;">Find Location</h1><br><br>
+			YOU ARE AT:
+			<select name="feild1">
+				<option value="">Choose Source</option>
+				<optgroup lable="Source">
+				 <option value="Wanaj">Wanaj Corner</option>
+   				 <option value="Mit">MIT college</option>
+				 <option value="kw">Kele Wadi</option>
+				 <option value="Paud">Paud rd</option>
+				 <option value="nal">Nal Stop</option>
+				 <option value="gar">Garware</option>
+				 <option value="deccan">Deccan</option>
+
+				</optgrouop>
+			</select><br><br>
+			
+			DESTINATION:
+			<select name="feild2">
+				<option value="">Choose Destination</option>
+				<optgroup lable="Dest">
+
+				 <option value=good"">Good Luck</option>
+   				 <option value="fc">Fergusson College</option>
+				 <option value="pc">Dhyaneshwar Pduka</option>
+				 <option value="pg">Police Ground</option>
+				 <option value="gk">Ganeshkhind</option>
+				 <option value="ssc">SSC Board</option>
+				 <option value="shivaji">Shivaji Nagar</option>
+
+				</optgrouop>
+			</select><br><br><br><br>
+
+			
+			 <input type="submit" value="GO" class="btn"><br><br>
+			
+		</form>	
+	</div>
+
+</body>
+</html>
+ 
